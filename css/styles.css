@@ -17,7 +17,12 @@ header {
 	justify-content: center;
 	background-color: #c54b3c;
 	padding-bottom: 1.5rem;
+	padding-top: 1rem;
 	margin-bottom: 2rem;
+}
+
+header>img {
+	padding-right: 1rem;
 }
 
 p {
@@ -27,11 +32,13 @@ p {
 h1 {
 	font-size: 2.5rem;
 	color: #fff;
+	text-transform: uppercase;
 }
 
 h2 {
 	font-size: 2rem;
 	color: #fff;
+	text-transform: uppercase;
 }
 
 h3 {
@@ -45,6 +52,7 @@ footer {
 	text-align: center;
 	padding-bottom: 2rem;
 	padding-top: 2rem;
+	margin-top: 3rem;
 }
 
 ul {
@@ -61,15 +69,14 @@ main {
 
 section {
 	display: flex;
-	margin-top: 1rem;
-	margin-bottom: 1rem;
+	padding: 1rem;
+	margin: 1rem;
 	background-color: #fff;
 	border-radius: 0.25rem;
 }
 
 section>div {
 	color: #2b2e37;
-	padding-right: 1rem;
 	padding-bottom: 2rem;
 	padding-top: 2rem;
 }
@@ -78,7 +85,6 @@ section>img {
 	min-width: 40%;
 	max-width: 9.375em;
 	align-self: center;
-	padding: 1rem;
 	margin-right: 1rem;
 }
 
@@ -87,7 +93,7 @@ aside {
 	background-color: #2b2e37;
 	color: #fff;
 	padding: 1rem;
-	margin-top: 2rem;
+	margin: 2rem 1rem 1rem 1rem;
 }
 
 /* Medium View */
@@ -97,16 +103,18 @@ aside {
 		flex-flow: column;
 		width: calc(100% / 2 - 0.5rem);
 		max-width: 49%;
+		margin: 1rem 0rem 1rem 0rem;
 	}
 
 	section>div {
 		padding-left: 2rem;
+		padding-top: 0rem;
 	}
 
 	section>img {
-		padding: 2rem;
-		min-width: 10em;
-		max-width: 30em;
+		max-width: 100%;
+		align-self: center;
+		margin-right: 0rem;
 	}
 
 	section>* {
@@ -133,4 +141,9 @@ aside {
 
 /* Largest View */
 
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 1024px) {
+	.wide-flex {
+		display: flex;
+		max-width: 100em;
+	}
+}
