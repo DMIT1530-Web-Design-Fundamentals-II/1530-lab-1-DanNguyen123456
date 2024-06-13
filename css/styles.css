@@ -8,16 +8,66 @@
 */
 
 body {
-    font-family: 'Assistant', sans-serif;
+	font-family: 'Assistant', sans-serif;
+	background-color: #393b47;
 }
+
+header {
+	background-color: #c54b3c;
+	padding: 0.5rem 0;
+}
+
+p {
+	font-size: 1rem;
+}
+
+h1 {
+	font-size: 2.5rem;
+
+}
+
+h2 {
+	font-size: 2rem;
+	color: #fff;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
 
 /* Mobile View */
 
+section {
+	display: flex;
+	margin-top: 1rem;
+}
 
+section>* {
+	min-width: 50%;
+}
 
 /* Medium View */
 
+@media screen and (min-width: 800px) {
+	section {
+		flex-flow: column;
+		width: calc(100% / 2 - 0.5rem);
+	}
 
+	.flex-container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.wide-flex {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+}
 
 /* Largest View */
 
+@media screen and (min-width: 1024px) {}
